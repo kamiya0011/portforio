@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>uenoポートフォリオサイト</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+  <header class="header">
+    <p class="site-title-sub">Web designer's portforio</p>
+    <h1 class="site-title">HI, MY NAME IS...</h1>
+    <p class="site-description">Check out some of my works.</p>
+    <div class="bottons">
+      <a class="button" href="#about">LEARN MORE</a>
+      <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+    </div>
+  </header>
+  <section class="about" id="about">
+    <h2 class="heading">ABOUT ME</h2>
+    <p class="about-text">21年卒業見込みwebデザイナー志望の上野主伊です。猫が好きです。犬も好き。<br>このサイトは趣味で行っていたweb制作/プログラミング/Photoshopのポートフォリオサイトです。<br>↓の制作物はそれぞれ別リンクへとびます。</p>
+  </section>
+  <section class="works">
+    <h2 class="heading">WORKS</h2>
+    <div class="works-wrapper">
+      <div class="work-box tree">
+        <img class="work-image" src="images/夜明け.jpg" alt="制作事例1">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+            イラナシリィ<br>
+            環境音+BGMを流せる作業用サイトです<br>
+            使用ツール:HTML/CSS/SASS/JS/Vue.JS <br>
+            <a href="../vne.js/サイト.html"target="_blank" class="button button-ghost">READ MORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box building">
+        <img class="work-image" src="images/森扉2.jpg" alt="制作事例2">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              Photoshop制作物<br>
+              合成・加工をメインに基本操作で作りました<br>
+              使用ツール：Photoshop/jQuery<br>
+              <a href="../phtoshop用サイト/photoshop用.html"target="_blank" class="button button-ghost">READ MORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box lake">
+        <img class="work-image" src="images/landscape-4827278_1920.jpg" target="_blank" alt="制作事例3">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              性格診断サイト<br>
+              16種から性格診断。Twitterへ投稿できます<br>
+              使用ツール：HTML/CSS/JS<br>
+             <a href="../N予備/診断機能の実装.html" target="_blank" class="button button-ghost">READ MORE</a>
+           </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box sky">
+        <img class="work-image" src="images/sunset-4875939_1920.jpg" alt="制作事例4">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              グリッドレイアウト(模写)<br>
+              他サイトより情報を整理して見せれます<br>
+              使用ツール：HTML/CSS/SASS<br>
+              <a href="../グリッド/index.html" target="_blank"class="button button-ghost">READMORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <h2 class="heading">MY SKILLS</h2>
+    <div class="skills-wrapper">
+      <div class="skill-box">
+        <i class="skill-icon fa fa-lightbulb-o"></i>
+        <div class="skill-title">IDEA</div>
+        <p class="skill-text">
+          人に評価される物を制作したいです。<br>
+          新しいコンテンツを作る時は人の模倣から<br>
+          その後自己流のアレンジを加えます。
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-paint-brush"></i>
+        <div class="skill-title">DESIGN</div>
+        <p class="skill-text">
+          その時代の流行り、見た目だけでなく<br>
+          UI/UXを意識し<br>
+          使いやすさ・美しさにこだわります。
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-code"></i>
+        <div class="skill-title">CODING</div>
+        <p class="skill-text">
+          HTML/CSSコーディングを行います。<br>
+          読みにくい・冗長なコードは嫌いなので<br>
+          常に可読性を意識します。
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">CONTACT</h2>
+    <form class="contact-form">
+      <div id="app">
+        <input v-bind="inputTitle" type="text" name="name" placeholder="NAME">
+        <textarea v-bind="textTitle" name="message" placeholder="MESSAGE"></textarea>
+        <input v-on:click="myAlert" type="submit" value="SEND">
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+    © ueno syui
+  </footer>
+
+  <script src="lib/placeholders.min.js"></script>
+</body>
+</html>
